@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--静态工厂方法-->
+
+	<bean id="person" class="com.xl.code.study.no_2.factory_method.PersonFactory"
+		  factory-method="staticBuildPerson"></bean>
+
+
+	<!--实例工厂方法-->
+<!--	<bean id="personFactory" class="com.xl.code.study.no_2.factory_method.PersonFactory"/>
+	<bean id="person" factory-bean="personFactory" factory-method="buildPerson"/>-->
+
+
+</beans>

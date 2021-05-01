@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="bfpp" class="com.xl.code.study.no_5.bfpp.ReplaceObscenitiesBeanFactoryPostProcessor">
+		<property name="obscenities">
+			<set>
+				<value>金瓶梅</value>
+				<value>鸳鸯戏水</value>
+				<value>双人格斗</value>
+			</set>
+		</property>
+	</bean>
+
+	<bean id="book-01" class="com.xl.code.study.no_5.bfpp.Book">
+		<property name="name" value="霸道总裁爱上灰姑娘"/>
+		<property name="author" value="网络"/>
+	</bean>
+
+	<bean id="book-02" class="com.xl.code.study.no_5.bfpp.Book">
+		<property name="name" value="金瓶梅"/>
+		<property name="author" value="网络"/>
+	</bean>
+
+	<bean id="book-03" class="com.xl.code.study.no_5.bfpp.Book">
+		<property name="name" value="鸳鸯戏水"/>
+		<property name="author" value="网络"/>
+	</bean>
+</beans>
